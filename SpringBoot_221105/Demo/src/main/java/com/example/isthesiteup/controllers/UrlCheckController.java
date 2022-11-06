@@ -32,7 +32,7 @@ public class UrlCheckController
             conn.connect();
            
             nResponseCodeCategory = conn.getResponseCode()/100;
-            if(nResponseCodeCategory != 2 || nResponseCodeCategory != 3)
+            if(nResponseCodeCategory != 2)
             {
                 szReturnMessage = SITE_IS_DOWN;
             }
